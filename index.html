@@ -231,6 +231,24 @@
     }
     .social-link svg { width: 14px; height: 14px; flex-shrink: 0; }
 
+    .save-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      width: 100%;
+      padding: 0.75rem;
+      background: var(--teal);
+      color: #fff;
+      border-radius: 8px;
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      transition: background 0.2s;
+    }
+    .save-btn:hover { background: var(--teal-dark); }
+
     /* Footer tagline */
     .card-footer {
       margin-top: 1.8rem;
@@ -333,7 +351,15 @@
         </div>
       </div>
 
-      <div class="card-footer">
+      <div class="save-contact" style="margin-top:1.2rem; animation: fadeUp 0.8s 0.36s cubic-bezier(0.16,1,0.3,1) both;">
+        <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:Dragana%20Jevti%C4%87%0AORG:Kreativno%20Mentorstvo%0ATITLE:Founder%20%26%20Director%0ATEL:+38163360687%0AEMAIL:dragana.jevtic%40kreativnomentorstvo.com%0AURL:https%3A%2F%2Fwww.creativementorship.org%0AEND:VCARD" download="Dragana_Jevtic.vcf" class="save-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" style="width:16px;height:16px;">
+            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+            <circle cx="12" cy="7" r="4"/>
+          </svg>
+          Save Contact
+        </a>
+      </div>
         <p class="tagline">Creative Mentorship · Belgrade</p>
       </div>
 
